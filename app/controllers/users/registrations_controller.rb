@@ -1,4 +1,4 @@
-class Users::RegistrationsController < Devis::RegistrationsController
+class Users::RegistrationsController < Devise::RegistrationsController
   
   def create
     super do |resource|
@@ -9,6 +9,7 @@ class Users::RegistrationsController < Devis::RegistrationsController
         else
           recource.save
         end
+      end
     end
   end
   
