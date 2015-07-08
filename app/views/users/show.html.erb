@@ -1,5 +1,8 @@
 <div class="row">
   <div class="col-md-6 col-md-offset-8 text-center">
+    
+    <%= image_tag @user.profile.avatar.url(:medium) %>
+    
     <div class="well">
     <%= @user.profile.first_name %>
     <%= @user.profile.last_name %><br/>
